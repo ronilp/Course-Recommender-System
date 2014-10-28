@@ -3,15 +3,15 @@
 %  Loading course rating data
 Y = load('course-ratings.txt'); 
 
-%  Y is a 15x80 matrindex, containing ratings (1-10) of 15 courses on 
+%  Y is a 15x80 matrix, containing ratings (1-10) of 15 courses on 
 %  80 students.
 %  Courses which are not rated by a particular student are given a rating
 %  of 0.
 
-%  Converting R to logical matrindex
+%  Converting R to logical matrix
 R = logical(Y);
 
-%  R is a 15x80 matrindex, where R(i,j) = 1 if student j gave a
+%  R is a 15x80 matrix, where R(i,j) = 1 if student j gave a
 %  rating to course i.
 
 %  Average Rating for each of the courses
@@ -23,7 +23,7 @@ figure('name','Average ratings for courses');
 
 bar(course_index,Avg);
 ylim([0 10]);
-%plot(course_index,Avg,'x');
+
 ylabel('Average Rating');
 xlabel('Course Index');
 
@@ -75,7 +75,7 @@ end
 
 fprintf('\nTraining collaborative filtering model\n');
 
-%  Add new student ratings to the data matrindex
+%  Add new student ratings to the data matrix
 Y = [student_rating Y'];
 R = [(student_rating ~= 0) R'];
 
@@ -85,7 +85,7 @@ R = [(student_rating ~= 0) R'];
 %  are present.
 Courses = size(Y,1);
 Students = size(Y,2);
-Features = 3;   
+Features = 9;   
 
 %  Randomly Initializing Parameters X and Theta
 X = randn(Courses, Features);
@@ -100,7 +100,7 @@ initial_parameters = [X(:); Theta(:)];
 options = optimset('GradObj', 'on', 'MaxIter', 100);
 
 %  Setting Regularization Parameter lambda
-lambda = 10;
+lambda = 3.2;
 theta = fmincg (@(t)(CostFunction(t, Y, R, Students, Courses, Features, lambda)), initial_parameters, options);
 
 %  Unfolding the returned theta vector into X and Theta

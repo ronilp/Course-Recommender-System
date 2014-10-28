@@ -1,0 +1,15 @@
+Computer Programming
+Object Oriented Programming
+Discreet Structutres for Computer Science
+Data Structures and Algorithms
+Design and Analysis of Algorithms
+Machine Learning
+Fuzzy Logic
+Data Mining
+Advance Data Mining
+Image Processing
+Pattern Recognition
+Network Programming
+Computer Networks
+Computer Graphics
+Database Systems
