@@ -26,8 +26,6 @@ subplot(2,2,1);
 plot(features,RMSE);
 hold on;
 plot(features,RMSE,'rx','MarkerSize',10);
-ylabel('RMS Error');
-xlabel('Number of Features');
 
 RMSE = [];
 
@@ -42,13 +40,7 @@ features = [1:1:15];
 plot(features,RMSE,'r-');
 hold on;
 plot(features,RMSE,'bx','MarkerSize',10);
-ylabel('RMS Error');
-xlabel('Number of Features');
-
-
-
-
-
+xlabel('Student 1');
 
 % 2nd time
 % Vector to store RMS Error with varying number of features
@@ -65,8 +57,6 @@ subplot(2,2,2);
 plot(features,RMSE);
 hold on;
 plot(features,RMSE,'rx','MarkerSize',10);
-ylabel('RMS Error');
-xlabel('Number of Features');
 
 RMSE = [];
 
@@ -81,11 +71,7 @@ features = [1:1:15];
 plot(features,RMSE,'r-');
 hold on;
 plot(features,RMSE,'bx','MarkerSize',10);
-ylabel('RMS Error');
-xlabel('Number of Features');
-
-
-
+xlabel('Student 2');
 
 % 3rd time
 % Vector to store RMS Error with varying number of features
@@ -102,8 +88,6 @@ subplot(2,2,3);
 plot(features,RMSE);
 hold on;
 plot(features,RMSE,'rx','MarkerSize',10);
-ylabel('RMS Error');
-xlabel('Number of Features');
 
 RMSE = [];
 
@@ -118,10 +102,7 @@ features = [1:1:15];
 plot(features,RMSE,'r-');
 hold on;
 plot(features,RMSE,'bx','MarkerSize',10);
-ylabel('RMS Error');
-xlabel('Number of Features');
-
-
+xlabel('Student 3');
 
 % 4th time
 % Vector to store RMS Error with varying number of features
@@ -138,8 +119,6 @@ subplot(2,2,4);
 plot(features,RMSE);
 hold on;
 plot(features,RMSE,'rx','MarkerSize',10);
-ylabel('RMS Error');
-xlabel('Number of Features');
 
 RMSE = [];
 
@@ -154,5 +133,4 @@ features = [1:1:15];
 plot(features,RMSE,'r-');
 hold on;
 plot(features,RMSE,'bx','MarkerSize',10);
-ylabel('RMS Error');
-xlabel('Number of Features');
+xlabel('Student 4');

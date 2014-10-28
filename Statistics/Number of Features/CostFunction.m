@@ -1,5 +1,3 @@
-%  Lambda = 0 for No Regularization
-
 function [J, grad] = CostFunction(params, Y, R, Students, Courses, Features, lambda)
 %  Collaborative filtering cost function
 %  This function returns the cost and gradient for the

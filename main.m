@@ -81,8 +81,9 @@ R = [(student_rating ~= 0) R'];
 
 
 %  ======== Feature Extraction ========  %
-%  Number of students = 80, Num of courses = 15. We assume 3 features
-%  are present.
+%  Number of students = 80, Num of courses = 15. We assume 9 features
+%  are present as it gives the best accuracy(calcuation shown in the folder
+%  name Statistics).
 Courses = size(Y,1);
 Students = size(Y,2);
 Features = 9;   
