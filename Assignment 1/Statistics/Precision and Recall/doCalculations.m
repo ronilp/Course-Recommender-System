@@ -1,12 +1,5 @@
 function my_predictions = doCalculations(student_rating,Y,R)
 
-rated_index = [];
-for i=1:15
-    if student_rating(i) ~=0
-        rated_index = [rated_index i];
-    end
-end
-
 %  ======== Training the Model ========  %
 %  Now, we will train the collaborative filtering model on a course rating 
 %  dataset of 15 courses and 56 students (70% training set)
@@ -53,11 +46,5 @@ fprintf('Recommender system learning completed.\n');
 
 p = X * Theta';
 my_predictions = p(:,1);
-
-%  Removing already completed courses
-for i = 1:length(rated_index)
-    course = rated_index(i);
-    my_predictions(course) = 0;
-end
 
 end
