@@ -49,11 +49,10 @@ fclose(fid);
 %  Initialize new student's ratings
 student_rating = zeros(15, 1);
 student_rating(1) = 10;
-student_rating(2) = 9;
-student_rating(3) = 10;
-student_rating(4) = 9;
-student_rating(12)= 2;
-student_rating(11)= 3;
+student_rating(2) = 10;
+student_rating(3) = 6;
+student_rating(4) = 8;
+student_rating(14)= 9;
 
 rated_index = [];
 for i=1:15
