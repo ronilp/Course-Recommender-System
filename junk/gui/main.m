@@ -1,8 +1,7 @@
 %  ======== Loading Data ========  %
 
 %  Loading course rating data
-[y y1]=f1();
-Y=load(y);
+Y = load('course-ratings.txt');
 
 %  Y is a 15x80 matrix, containing ratings (1-10) of 15 courses on 
 %  80 students.
@@ -29,8 +28,7 @@ ylabel('Average Rating');
 xlabel('Course Index');
 
 %  Loading list of courses
-
-fid = fopen(y1);
+fid = fopen('course-list.txt');
 
 %  Storing all courses in cell array courseList{}
 n = 15;  % Total number of courses 
@@ -57,6 +55,7 @@ fclose(fid);
 s=cell(1,15);
 [s{1} s{2} s{3} s{4} s{5} s{6} s{7} s{8} s{9} s{10} s{11} s{12} s{13} s{14} s{15}]=(f2());
 student_rating = cell2mat(s);
+
 rated_index = [];
 for i=1:15
     if student_rating(i) ~=0

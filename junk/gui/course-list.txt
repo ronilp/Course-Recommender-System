@@ -1,6 +1,6 @@
 Computer Programming
 Object Oriented Programming
-Discrete Structutres for Computer Science
+Discreet Structutres for Computer Science
 Data Structures and Algorithms
 Design and Analysis of Algorithms
 Machine Learning

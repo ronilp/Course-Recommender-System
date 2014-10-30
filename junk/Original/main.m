@@ -46,13 +46,10 @@ fclose(fid);
 %  add ratings that correspond to a the new student who entered his/her
 %  ratings.
 
-%  Initialize new student's ratings
-student_rating = zeros(15, 1);
-student_rating(1) = 10;
-student_rating(2) = 10;
-student_rating(3) = 6;
-student_rating(4) = 8;
-student_rating(14)= 9;
+%  Adding new student's rating through GUI
+s=cell(1,15);
+[s{1} s{2} s{3} s{4} s{5} s{6} s{7} s{8} s{9} s{10} s{11} s{12} s{13} s{14} s{15}]=(f2());
+student_rating = cell2mat(s);
 
 rated_index = [];
 for i=1:15
@@ -139,3 +136,6 @@ for i=1:3
     j = index(i);
     fprintf('Predicted rating %.1f : %s\n', my_predictions(j), courseList{j});
 end
+
+%  Displaying results on GUI
+GUI3(my_predictions(index(1)), courseList(index(1)),my_predictions(index(2)), courseList(index(2)),my_predictions(index(3)), courseList(index(3)));

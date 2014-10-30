@@ -22,7 +22,7 @@ function varargout = f2(varargin)
 
 % Edit the above text to modify the response to help f2
 
-% Last Modified by GUIDE v2.5 30-Oct-2014 00:34:48
+% Last Modified by GUIDE v2.5 30-Oct-2014 15:16:57
 
 % Begin initialization code - DO NOT EDIT
 gui_Singleton = 1;
@@ -54,6 +54,22 @@ function f2_OpeningFcn(hObject, eventdata, handles, varargin)
 
 % Choose default command line output for f2
 handles.output = hObject;
+set(handles.text1,'String',varargin{1});
+set(handles.text14,'String',varargin{2});
+set(handles.text15,'String',varargin{3});
+set(handles.text28,'String',varargin{4});
+set(handles.text29,'String',varargin{5});
+set(handles.text30,'String',varargin{6});
+set(handles.text31,'String',varargin{7});
+set(handles.text32,'String',varargin{8});
+set(handles.text33,'String',varargin{9});
+set(handles.text34,'String',varargin{10});
+set(handles.text35,'String',varargin{11});
+set(handles.text36,'String',varargin{12});
+set(handles.text37,'String',varargin{13});
+set(handles.text38,'String',varargin{14});
+set(handles.text39,'String',varargin{15});
+
 
 % Update handles structure
 guidata(hObject, handles);
@@ -1061,3 +1077,10 @@ else
     % The GUI is no longer waiting, just close it
     delete(hObject);
 end
+
+
+% --- Executes during object creation, after setting all properties.
+function figure1_CreateFcn(hObject, eventdata, handles)
+% hObject    handle to figure1 (see GCBO)
+% eventdata  reserved - to be defined in a future version of MATLAB
+% handles    empty - handles not created until after all CreateFcns called

@@ -25,3 +25,8 @@ the desired results and thus, it will take some time.
 
 In Precision and Recall folder, a seperate README is provided for 
 information on how to run it.
+
+CODE
+The file main.m has the main code content. CostFunction.m has the 
+objection function, and fmincg.m has the update rule function.
+The files f2.m and GUI3.m contain the code for GUI.
