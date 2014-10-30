@@ -1,13 +1,18 @@
 Please see the Report.pdf also.
 
-To execute the program, open the main.m file in matlab and run it.
+EXECTUTION OF CODE
+To execute the program, open the main.m file in matlab and run the program.
+A GUI window will open. Enter ratings for the courses you have completed and
+close the window to continue. See the console for detailed output.
 
+TRAINING DATA
 The ratings by students for different courses are stored in 
 course-ratings.txt and list of courses is stored in course-list.txt
 
 Course ratings are stored as a matrix of 80x15 dimension.
 It corresponds to ratings for 15 courses by 80 users.
 
+RESULTS
 In the folder name Statistics, we have added the codes that
 we used to compute the evaluation metrics that we have presented 
 in our report.
