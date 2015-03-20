@@ -1,5 +1,3 @@
-Please see the Report.pdf also.
-
 EXECTUTION OF CODE
 To execute the program, open the main.m file in matlab and run the program.
 A GUI window will open. Enter ratings for the courses you have completed and
@@ -30,3 +28,19 @@ CODE
 The file main.m has the main code content. CostFunction.m has the 
 objection function, and fmincg.m has the update rule function.
 The files f2.m and GUI3.m contain the code for GUI.
+
+CALCULATING PRECISION AND RECALL
+For calculating True Positives, True Negatives, False Positives and False
+Negatives, we will not remove the recommended courses for already
+completed courses with high ratings and see if they were actually being
+recommended or not.
+
+We have generated the index of top 3 predicted ratings of courses for all
+students in test set and stored them in Recommend.txt
+
+From there, we manually calculated the True Positives, True Negatives, False Positives 
+and False Negatives.
+
+			   Recommended           Not Recommended
+Preferred      True Positives  : 75  False Negatives : 27
+Not-Preferred  False Positives : 6   True Negatives  : 180
